@@ -1,0 +1,66 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Categorías de productos
+model Category {
+  id        Int       @id @default(autoincrement())
+  name      String
+  slug      String    @unique
+  icon      String?
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  products  Product[]
+}
+
+// Productos
+model Product {
+  id          Int       @id @default(autoincrement())
+  name        String
+  description String
+  price       Float
+  image       String
+  category    Category  @relation(fields: [categoryId], references: [id])
+  categoryId  Int
+  rating      Float     @default(5.0)
+  isFestive   Boolean   @default(false)
+  isPackable  Boolean   @default(false)
+  ingredients String    // JSON string for ingredients array
+  available   Boolean   @default(true)
+  isBestseller Boolean  @default(false)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
+// Suscriptores del Newsletter
+model Subscriber {
+  id           Int      @id @default(autoincrement())
+  email        String   @unique
+  subscribedAt DateTime @default(now())
+  active       Boolean  @default(true)
+}
+
+// Mensajes de Contacto
+model Message {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String
+  message   String
+  read      Boolean  @default(false)
+  createdAt DateTime @default(now())
+}
+
+// Configuración de la tienda
+model Setting {
+  id    Int    @id @default(autoincrement())
+  key   String @unique
+  value String
+}
