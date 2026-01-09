@@ -51,7 +51,7 @@ export default function TestimonialsSection() {
                                     <Star key={i} size={14} fill="currentColor" strokeWidth={0} />
                                 ))}
                             </div>
-                            <p className="font-serif text-lg text-[#4A4A4A]/80 italic mb-6 leading-relaxed">"{testimonial.text}"</p>
+                            <p className="font-serif text-lg text-[#4A4A4A]/80 italic mb-6 leading-relaxed">&quot;{testimonial.text}&quot;</p>
                             <div>
                                 <h4 className="font-bold text-[#4A4A4A] uppercase text-sm tracking-wide">{testimonial.name}</h4>
                                 <span className="text-xs text-[#D48995] font-medium">{testimonial.role}</span>

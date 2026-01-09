@@ -217,7 +217,7 @@ export default function ProductForm({ initialData, isEditing = false }: ProductF
                             />
                             <div>
                                 <span className="font-medium text-gray-700">Destacar como Más Vendido</span>
-                                <p className="text-xs text-gray-500">Aparecerá en la sección "Favoritos"</p>
+                                <p className="text-xs text-gray-500">Aparecerá en la sección &quot;Favoritos&quot;</p>
                             </div>
                         </label>
                     </div>
