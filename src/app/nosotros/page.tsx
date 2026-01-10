@@ -35,7 +35,7 @@ export default function AboutPage() {
                         </h1>
                         <div className="w-20 h-1 bg-mauve mb-8 rounded-full"></div>
                         <p className="text-lg text-charcoal/70 leading-relaxed mb-6">
-                            Pabel's nació hace 15 años en la pequeña cocina de nuestro abuelo Don Pabel. Lo que comenzó como un pasatiempo de domingo, horneando postres para los vecinos, se transformó en una pasión por crear momentos de felicidad a través del sabor.
+                            Pabel&apos;s nació hace 15 años en la pequeña cocina de nuestro abuelo Don Pabel. Lo que comenzó como un pasatiempo de domingo, horneando postres para los vecinos, se transformó en una pasión por crear momentos de felicidad a través del sabor.
                         </p>
                         <p className="text-lg text-charcoal/70 leading-relaxed">
                             Hoy, mantenemos intactas esas recetas secretas, utilizando técnicas modernas pero respetando el tiempo que requiere cada masa para ser perfecta. Porque aquí, la prisa no existe.

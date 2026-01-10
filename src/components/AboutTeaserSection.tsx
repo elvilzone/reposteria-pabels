@@ -43,7 +43,7 @@ export default function AboutTeaserSection() {
                             El legado del Abuelo Pabel
                         </h2>
                         <p className="text-gray-600 text-lg mb-6 leading-relaxed">
-                            Todo comenzó con la pasión de nuestro abuelo Pabel, fundador de <strong className="text-[#5D4037]">Pabel`s Patisserie</strong>. Su visión era simple pero poderosa: crear postres que no solo endulzaran el paladar, sino que unieran a las familias.
+                            Todo comenzó con la pasión de nuestro abuelo Pabel, fundador de <strong className="text-[#5D4037]">Pabel&apos;s Patisserie</strong>. Su visión era simple pero poderosa: crear postres que no solo endulzaran el paladar, sino que unieran a las familias.
                         </p>
                         <p className="text-gray-600 text-lg mb-8 leading-relaxed">
                             Hoy, mantenemos vivo su legado horneando con la misma filosofía: ingredientes frescos, recetas tradicionales y un amor incondicional por la repostería artesanal que se siente en cada bocado.

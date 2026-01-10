@@ -14,7 +14,7 @@ export default function Footer() {
 
                     {/* Brand */}
                     <div className="md:col-span-1">
-                        <h2 className="font-script text-4xl mb-4 text-white">Pabel's</h2>
+                        <h2 className="font-script text-4xl mb-4 text-white">Pabel&apos;s</h2>
                         <p className="text-cream/60 text-sm leading-relaxed">
                             Dulzura artesanal desde 2010. Creamos momentos especiales con cada bocado.
                         </p>
@@ -82,7 +82,7 @@ export default function Footer() {
 
                         {/* Copyright */}
                         <p className="text-xs text-cream/40 text-center">
-                            © {new Date().getFullYear()} Pabel's Patisserie. Todos los derechos reservados. Hecho con ♥ en Bolivia.
+                            © {new Date().getFullYear()} Pabel&apos;s Patisserie. Todos los derechos reservados. Hecho con ♥ en Bolivia.
                         </p>
                     </div>
                 </div>

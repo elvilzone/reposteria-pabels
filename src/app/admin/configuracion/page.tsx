@@ -43,7 +43,7 @@ export default function ConfigPage() {
 
                     <div className="border-b border-gray-100 pb-6 mb-6">
                         <h2 className="text-lg font-bold text-gray-800 mb-4">Sección Festiva</h2>
-                        <p className="text-sm text-gray-500 mb-6">Cambia el título de la colección principal (ej. "Especial Navidad", "Día de la Madre").</p>
+                        <p className="text-sm text-gray-500 mb-6">Cambia el título de la colección principal (ej. &quot;Especial Navidad&quot;, &quot;Día de la Madre&quot;).</p>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
