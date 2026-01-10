@@ -69,32 +69,35 @@ function MenuContent() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8 sticky top-24 z-30 bg-white/80 backdrop-blur-md p-6 rounded-[2rem] shadow-sm border border-soft-pink/20"
+                    className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8 sticky top-24 z-30 bg-white/90 backdrop-blur-md p-4 rounded-3xl shadow-sm border border-soft-pink/20"
                 >
-                    <div className="flex flex-wrap justify-center gap-3">
-                        <button
-                            onClick={() => setFilter('all')}
-                            className={`px-8 py-2 rounded-full font-script text-3xl font-bold transition-colors duration-200 pt-3
+                    {/* Categories - Horizontal Scroll on Mobile */}
+                    <div className="w-full md:w-auto overflow-x-auto pb-2 md:pb-0 scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0">
+                        <div className="flex md:flex-wrap gap-2 md:justify-center w-max md:w-auto">
+                            <button
+                                onClick={() => setFilter('all')}
+                                className={`px-5 py-2 rounded-full font-script text-2xl md:text-3xl font-bold transition-all duration-200 pt-3 whitespace-nowrap
                         ${filter === 'all'
-                                    ? 'bg-[#D48995] text-white'
-                                    : 'bg-transparent text-charcoal/80 hover:bg-[#D48995]/20'}`}
-                        >
-                            Todos
-                        </button>
-                        {categories
-                            .filter(cat => cat.id !== 'all' && cat.id !== 'sabores' && cat.id !== 'packs')
-                            .map(cat => (
-                                <button
-                                    key={cat.id}
-                                    onClick={() => setFilter(cat.id)}
-                                    className={`px-8 py-2 rounded-full font-script text-3xl font-bold transition-colors duration-200 pt-3
+                                        ? 'bg-[#D48995] text-white'
+                                        : 'bg-transparent text-charcoal/80 hover:bg-[#D48995]/20'}`}
+                            >
+                                Todos
+                            </button>
+                            {categories
+                                .filter(cat => cat.id !== 'all' && cat.id !== 'sabores' && cat.id !== 'packs')
+                                .map(cat => (
+                                    <button
+                                        key={cat.id}
+                                        onClick={() => setFilter(cat.id)}
+                                        className={`px-5 py-2 rounded-full font-script text-2xl md:text-3xl font-bold transition-all duration-200 pt-3 whitespace-nowrap
                             ${filter === cat.id
-                                            ? 'bg-[#D48995] text-white'
-                                            : 'bg-transparent text-charcoal/80 hover:bg-[#D48995]/20'}`}
-                                >
-                                    {cat.name}
-                                </button>
-                            ))}
+                                                ? 'bg-[#D48995] text-white'
+                                                : 'bg-transparent text-charcoal/80 hover:bg-[#D48995]/20'}`}
+                                    >
+                                        {cat.name}
+                                    </button>
+                                ))}
+                        </div>
                     </div>
 
                     <div className="relative w-full md:w-72">
@@ -103,7 +106,7 @@ function MenuContent() {
                             placeholder="Buscar dulzura..."
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
-                            className="w-full pl-12 pr-6 py-3 rounded-full border border-soft-pink/30 focus:outline-none focus:ring-2 focus:ring-mauve/50 bg-cream text-charcoal placeholder-charcoal/40 text-sm"
+                            className="w-full pl-12 pr-6 py-3 rounded-full border border-soft-pink/30 focus:outline-none focus:ring-2 focus:ring-mauve/50 bg-cream/50 text-charcoal placeholder-charcoal/40 text-sm"
                         />
                         <Search className="absolute left-4 top-3 text-mauve/60" size={18} />
                     </div>
