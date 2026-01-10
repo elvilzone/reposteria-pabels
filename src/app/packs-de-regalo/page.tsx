@@ -47,7 +47,7 @@ export default function GiftPacksPage() {
     useMemo(() => {
         const updated = boxSizes.find(b => b.size === selectedBox.size);
         if (updated) setSelectedBox(updated);
-    }, [boxSizes]);
+    }, [boxSizes, selectedBox.size]);
 
     const [activeTreatCategory, setActiveTreatCategory] = useState('Todos');
 
@@ -210,7 +210,7 @@ export default function GiftPacksPage() {
                                             <div className="col-span-3 text-center py-8 text-gray-400 text-sm">
                                                 No hay productos disponibles para rellenar en esta categoría.
                                                 <br />
-                                                <span className="text-xs font-bold text-mauve">Tip: Ve al Admin y marca 'Disponible para Packs' en tus productos.</span>
+                                                <span className="text-xs font-bold text-mauve">Tip: Ve al Admin y marca &apos;Disponible para Packs&apos; en tus productos.</span>
                                             </div>
                                         )}
                                     </div>

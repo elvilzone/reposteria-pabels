@@ -105,7 +105,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
                     <button onClick={() => setIsSidebarOpen(true)} className="text-charcoal">
                         <Menu size={24} />
                     </button>
-                    <span className="font-script text-xl text-charcoal">Pabel's Admin</span>
+                    <span className="font-script text-xl text-charcoal">Pabel&apos;s Admin</span>
                     <div className="w-6" /> {/* Spacer */}
                 </header>
 
