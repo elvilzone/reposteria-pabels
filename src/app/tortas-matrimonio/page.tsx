@@ -108,24 +108,15 @@ export default function WeddingCakesLanding() {
                         initial={{ opacity: 0, scale: 0.95 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
-                        className="relative h-[400px] md:h-[600px] rounded-3xl overflow-hidden shadow-2xl"
+                        className="relative h-[400px] md:h-[600px] rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-b from-gray-50 to-white"
                     >
                         <Image
-                            src="/wedding-gold-setup.jpg"
+                            src="/wedding-hero-main.jpg"
                             alt="Torta de matrimonio elegante"
                             fill
-                            className="object-cover"
+                            className="object-contain"
                             priority
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-                        <div className="absolute bottom-8 left-8 text-white">
-                            <p className="text-sm font-bold uppercase tracking-wider mb-2">Más de 50 bodas en 2024</p>
-                            <div className="flex gap-1">
-                                {[...Array(5)].map((_, i) => (
-                                    <Star key={i} size={20} fill="gold" className="text-yellow-400" />
-                                ))}
-                            </div>
-                        </div>
                     </motion.div>
                 </div>
             </section>
