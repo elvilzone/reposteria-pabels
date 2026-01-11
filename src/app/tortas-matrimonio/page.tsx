@@ -8,7 +8,7 @@ import { SITE_CONFIG } from '@/lib/config';
 
 export default function WeddingCakesLanding() {
     const whatsappMessage = encodeURIComponent(
-        `Hola 👋\nVengo desde su página web y quiero información sobre:\n\n👉 Torta de matrimonio\n📅 Fecha del evento: \n👥 Número de invitados: \n🎂 Sabor deseado: `
+        `Hola 👋\nVengo desde su página web y quiero información sobre:\n\n👉 Torta de matrimonio / Torta individual\n📅 Fecha del evento:\n👥 Número de invitados:\n🎂 Sabor deseado:`
     );
 
     const whatsappLink = `https://wa.me/${SITE_CONFIG.whatsappNumber}?text=${whatsappMessage}`;
@@ -84,10 +84,10 @@ export default function WeddingCakesLanding() {
                         className="text-center mb-12"
                     >
                         <h1 className="font-script text-5xl md:text-7xl text-charcoal mb-6 leading-tight">
-                            Tortas de matrimonio<br />personalizadas en Potosí
+                            🎂 Tortas de matrimonio<br />personalizadas en Potosí
                         </h1>
                         <p className="text-xl md:text-2xl text-charcoal/70 mb-4 font-light">
-                            Diseños elegantes • Sabores premium • Hechas artesanalmente para tu día especial
+                            Diseños elegantes • Sabores premium • Elaboradas artesanalmente para tu día especial
                         </p>
                         <p className="text-sm text-charcoal/60 mb-8 max-w-2xl mx-auto">
                             Trabajamos con cupos limitados por fecha para garantizar calidad y detalle en cada torta.
@@ -99,7 +99,7 @@ export default function WeddingCakesLanding() {
                             className="inline-flex items-center gap-3 bg-[#25D366] text-white px-10 py-5 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all"
                         >
                             <MessageCircle size={24} />
-                            Cotizar por WhatsApp
+                            📲 Cotizar mi torta por WhatsApp
                         </a>
                     </motion.div>
 
@@ -127,6 +127,110 @@ export default function WeddingCakesLanding() {
                             </div>
                         </div>
                     </motion.div>
+                </div>
+            </section>
+
+            {/* Wedding Cakes Details Section */}
+            <section className="py-16 px-4 bg-white">
+                <div className="max-w-6xl mx-auto">
+                    <div className="grid md:grid-cols-2 gap-12 items-center">
+                        <motion.div
+                            initial={{ opacity: 0, x: -30 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                        >
+                            <h2 className="font-script text-4xl md:text-5xl text-charcoal mb-6">
+                                Tortas de matrimonio
+                            </h2>
+                            <p className="text-charcoal/70 text-lg mb-6 leading-relaxed">
+                                Creamos tortas únicas adaptadas al estilo de tu boda. Cada diseño es personalizado y elaborado con ingredientes de calidad, cuidando cada detalle desde el sabor hasta la presentación.
+                            </p>
+                            <ul className="space-y-3 mb-8">
+                                {[
+                                    'Diseños personalizados según tu evento',
+                                    'Sabores clásicos y especiales',
+                                    'Atención directa y asesoramiento',
+                                    'Reservas con anticipación'
+                                ].map((item, idx) => (
+                                    <li key={idx} className="flex items-start gap-3">
+                                        <Check className="text-[#D48995] shrink-0 mt-1" size={20} />
+                                        <span className="text-charcoal">{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                            <a
+                                href={whatsappLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-2 bg-charcoal text-white px-8 py-3 rounded-full font-bold hover:bg-[#D48995] transition-colors"
+                            >
+                                <MessageCircle size={20} />
+                                📲 Consultar disponibilidad
+                            </a>
+                        </motion.div>
+                        <motion.div
+                            initial={{ opacity: 0, x: 30 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl"
+                        >
+                            <Image
+                                src="/wedding-pastel-roses.jpg"
+                                alt="Torta de matrimonio elegante"
+                                fill
+                                className="object-cover"
+                            />
+                        </motion.div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Individual Cakes Section */}
+            <section className="py-16 px-4 bg-gradient-to-b from-white to-[#F9F5F0]">
+                <div className="max-w-6xl mx-auto">
+                    <div className="grid md:grid-cols-2 gap-12 items-center">
+                        <motion.div
+                            initial={{ opacity: 0, x: -30 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            className="relative h-[400px] rounded-3xl overflow-hidden shadow-xl order-2 md:order-1"
+                        >
+                            <Image
+                                src="/bday-minnie-pink.jpg"
+                                alt="Torta individual artesanal"
+                                fill
+                                className="object-cover"
+                            />
+                        </motion.div>
+                        <motion.div
+                            initial={{ opacity: 0, x: 30 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            className="order-1 md:order-2"
+                        >
+                            <h2 className="font-script text-4xl md:text-5xl text-charcoal mb-6">
+                                Tortas individuales artesanales
+                            </h2>
+                            <p className="text-charcoal/70 text-lg mb-6 leading-relaxed">
+                                Elaboramos tortas individuales ideales para cumpleaños, celebraciones pequeñas o regalos especiales.
+                            </p>
+                            <div className="bg-white p-6 rounded-2xl shadow-sm mb-6">
+                                <p className="text-sm font-bold text-charcoal/60 mb-3 uppercase tracking-wider">Sabores disponibles</p>
+                                <p className="text-charcoal text-lg">
+                                    Tres leches • Red Velvet • Sabores especiales por encargo
+                                </p>
+                            </div>
+                            <a
+                                href={whatsappLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-2 bg-[#D48995] text-white px-8 py-3 rounded-full font-bold hover:bg-charcoal transition-colors"
+                            >
+                                <MessageCircle size={20} />
+                                📲 Pedir por WhatsApp
+                            </a>
+                        </motion.div>
+                    </div>
                 </div>
             </section>
 
@@ -201,8 +305,8 @@ export default function WeddingCakesLanding() {
                                 viewport={{ once: true }}
                                 transition={{ delay: idx * 0.1 }}
                                 className={`p-8 rounded-3xl border-2 ${item.popular
-                                        ? 'border-[#D48995] bg-[#D48995]/5 shadow-lg scale-105'
-                                        : 'border-gray-200'
+                                    ? 'border-[#D48995] bg-[#D48995]/5 shadow-lg scale-105'
+                                    : 'border-gray-200'
                                     }`}
                             >
                                 {item.popular && (
@@ -269,7 +373,7 @@ export default function WeddingCakesLanding() {
                         viewport={{ once: true }}
                     >
                         <h2 className="font-script text-4xl md:text-5xl mb-4">
-                            Cupos limitados por fecha
+                            ⚠️ Cupos limitados por fecha
                         </h2>
                         <p className="text-xl mb-8 text-white/90">
                             Para tortas de matrimonio recomendamos reservar con anticipación.<br />
@@ -282,7 +386,7 @@ export default function WeddingCakesLanding() {
                             className="inline-flex items-center gap-3 bg-white text-[#D48995] px-10 py-5 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all"
                         >
                             <MessageCircle size={24} />
-                            Reservar por WhatsApp
+                            📲 Reservar por WhatsApp
                         </a>
                     </motion.div>
                 </div>
@@ -291,10 +395,10 @@ export default function WeddingCakesLanding() {
             {/* Footer */}
             <footer className="bg-charcoal text-cream py-12 px-4">
                 <div className="max-w-6xl mx-auto text-center">
-                    <h3 className="font-script text-3xl mb-4">Pabels Patisserie</h3>
+                    <h3 className="font-script text-3xl mb-4">Repostería Pabel</h3>
                     <p className="text-cream/80 mb-2">Tortas de matrimonio y tortas artesanales</p>
                     <p className="text-cream/60 text-sm mb-4">
-                        📍 {SITE_CONFIG.address.city}, {SITE_CONFIG.address.country}
+                        📍 Potosí, Bolivia
                     </p>
                     <a
                         href={whatsappLink}
@@ -303,7 +407,7 @@ export default function WeddingCakesLanding() {
                         className="inline-flex items-center gap-2 text-[#25D366] hover:text-[#20BA5A] transition-colors"
                     >
                         <MessageCircle size={20} />
-                        Atención directa por WhatsApp
+                        📲 Atención directa por WhatsApp
                     </a>
                 </div>
             </footer>
