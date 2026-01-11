@@ -42,8 +42,8 @@ export default function WeddingCakesLanding() {
     ];
 
     const pricing = [
-        { guests: '50 personas', price: 'Desde Bs. 800', popular: false },
-        { guests: '100 personas', price: 'Desde Bs. 1,400', popular: true },
+        { guests: '100 personas', price: 'Desde Bs. 950', popular: false },
+        { guests: '150 personas', price: 'Desde Bs. 1,250', popular: true },
         { guests: '200+ personas', price: 'Cotización personalizada', popular: false }
     ];
 
@@ -165,13 +165,13 @@ export default function WeddingCakesLanding() {
                             initial={{ opacity: 0, x: 30 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
-                            className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl"
+                            className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl group cursor-pointer"
                         >
                             <Image
                                 src="/wedding-pastel-roses.jpg"
                                 alt="Torta de matrimonio elegante"
                                 fill
-                                className="object-cover"
+                                className="object-cover group-hover:scale-110 transition-transform duration-500"
                             />
                         </motion.div>
                     </div>
@@ -186,13 +186,13 @@ export default function WeddingCakesLanding() {
                             initial={{ opacity: 0, x: -30 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
-                            className="relative h-[400px] rounded-3xl overflow-hidden shadow-xl order-2 md:order-1"
+                            className="relative h-[400px] rounded-3xl overflow-hidden shadow-xl order-2 md:order-1 group cursor-pointer"
                         >
                             <Image
                                 src="/bautizo-setup.jpg"
                                 alt="Tortas de bautizo elegantes"
                                 fill
-                                className="object-cover"
+                                className="object-cover group-hover:scale-110 transition-transform duration-500"
                             />
                         </motion.div>
                         <motion.div
