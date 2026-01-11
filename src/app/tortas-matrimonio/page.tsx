@@ -185,7 +185,7 @@ export default function WeddingCakesLanding() {
                 </div>
             </section>
 
-            {/* Individual Cakes Section */}
+            {/* Baptism Cakes Section */}
             <section className="py-16 px-4 bg-gradient-to-b from-white to-[#F9F5F0]">
                 <div className="max-w-6xl mx-auto">
                     <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -196,8 +196,8 @@ export default function WeddingCakesLanding() {
                             className="relative h-[400px] rounded-3xl overflow-hidden shadow-xl order-2 md:order-1"
                         >
                             <Image
-                                src="/bday-minnie-pink.jpg"
-                                alt="Torta individual artesanal"
+                                src="/bautizo-setup.jpg"
+                                alt="Tortas de bautizo elegantes"
                                 fill
                                 className="object-cover"
                             />
@@ -209,15 +209,15 @@ export default function WeddingCakesLanding() {
                             className="order-1 md:order-2"
                         >
                             <h2 className="font-script text-4xl md:text-5xl text-charcoal mb-6">
-                                Tortas individuales artesanales
+                                Tortas de bautizo
                             </h2>
                             <p className="text-charcoal/70 text-lg mb-6 leading-relaxed">
-                                Elaboramos tortas individuales ideales para cumpleaños, celebraciones pequeñas o regalos especiales.
+                                Celebra el bautizo de tu bebé con tortas especiales diseñadas para este momento único. Creamos presentaciones elegantes y delicadas que hacen de tu evento algo memorable.
                             </p>
                             <div className="bg-white p-6 rounded-2xl shadow-sm mb-6">
-                                <p className="text-sm font-bold text-charcoal/60 mb-3 uppercase tracking-wider">Sabores disponibles</p>
+                                <p className="text-sm font-bold text-charcoal/60 mb-3 uppercase tracking-wider">Diseños especiales</p>
                                 <p className="text-charcoal text-lg">
-                                    Tres leches • Red Velvet • Sabores especiales por encargo
+                                    Temáticas religiosas • Colores personalizados • Decoraciones delicadas
                                 </p>
                             </div>
                             <a
