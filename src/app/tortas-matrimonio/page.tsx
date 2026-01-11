@@ -108,13 +108,13 @@ export default function WeddingCakesLanding() {
                         initial={{ opacity: 0, scale: 0.95 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
-                        className="relative h-[400px] md:h-[600px] rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-b from-gray-50 to-white"
+                        className="relative h-[350px] md:h-[450px] rounded-3xl overflow-hidden shadow-2xl"
                     >
                         <Image
                             src="/wedding-hero-main.jpg"
                             alt="Torta de matrimonio elegante"
                             fill
-                            className="object-contain"
+                            className="object-cover"
                             priority
                         />
                     </motion.div>
