@@ -91,7 +91,7 @@ export default function BirthdayCakesLanding() {
                     </motion.div>
 
                     {/* Hero Image */}
-                    <div className="max-w-3xl mx-auto">
+                    <div className="max-w-4xl mx-auto">
                         <motion.div
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={{ opacity: 1, scale: 1 }}
