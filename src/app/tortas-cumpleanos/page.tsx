@@ -62,7 +62,7 @@ export default function BirthdayCakesLanding() {
             </header>
 
             {/* Hero Section */}
-            <section className="pt-32 pb-16 px-4">
+            <section className="pt-44 pb-16 px-4">
                 <div className="max-w-6xl mx-auto">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
@@ -96,13 +96,14 @@ export default function BirthdayCakesLanding() {
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.8, delay: 0.2 }}
-                            className="relative h-[350px] md:h-[450px] rounded-3xl overflow-hidden shadow-2xl group cursor-pointer"
+                            className="relative w-full rounded-3xl overflow-hidden shadow-2xl group cursor-pointer"
                         >
                             <Image
                                 src="/minnie-mouse-setup-final.jpg"
                                 alt="Mesa de torta Minnie Mouse Final"
-                                fill
-                                className="object-cover group-hover:scale-110 transition-transform duration-500"
+                                width={1200}
+                                height={900}
+                                className="w-full h-auto object-cover group-hover:scale-110 transition-transform duration-500"
                                 priority
                             />
                         </motion.div>
