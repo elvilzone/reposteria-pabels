@@ -104,20 +104,22 @@ export default function WeddingCakesLanding() {
                     </motion.div>
 
                     {/* Hero Image */}
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.95 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.8, delay: 0.2 }}
-                        className="relative h-[350px] md:h-[450px] rounded-3xl overflow-hidden shadow-2xl"
-                    >
-                        <Image
-                            src="/wedding-hero-main.jpg"
-                            alt="Torta de matrimonio elegante"
-                            fill
-                            className="object-cover"
-                            priority
-                        />
-                    </motion.div>
+                    <div className="max-w-5xl mx-auto">
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.95 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.8, delay: 0.2 }}
+                            className="relative h-[350px] md:h-[450px] rounded-3xl overflow-hidden shadow-2xl group cursor-pointer"
+                        >
+                            <Image
+                                src="/wedding-hero-main.jpg"
+                                alt="Torta de matrimonio elegante"
+                                fill
+                                className="object-cover group-hover:scale-110 transition-transform duration-500"
+                                priority
+                            />
+                        </motion.div>
+                    </div>
                 </div>
             </section>
 
