@@ -14,12 +14,12 @@ export default function BirthdayCakesLanding() {
     const whatsappLink = `https://wa.me/${SITE_CONFIG.whatsappNumber}?text=${whatsappMessage}`;
 
     const galleryImages = [
-        '/masha-bear-cake.jpg',
+        '/minnie-mouse-setup.jpg',
         '/royal-prince-cake.jpg',
         '/lol-surprise-cake.jpg',
-        '/minnie-mouse-setup.jpg',
+        '/masha-bear-cake.jpg',
         '/baby-shower-bear.jpg',
-        '/bday-minnie-pink.jpg' // Usando una existente como relleno si falta, o repetimos alguna setup
+        '/bautizo-setup.jpg'
     ];
 
     const testimonials = [
@@ -99,8 +99,8 @@ export default function BirthdayCakesLanding() {
                             className="relative h-[350px] md:h-[450px] rounded-3xl overflow-hidden shadow-2xl group cursor-pointer"
                         >
                             <Image
-                                src="/minnie-mouse-setup.jpg"
-                                alt="Mesa de torta Minnie Mouse"
+                                src="/masha-bear-cake.jpg"
+                                alt="Torta Masha y el Oso"
                                 fill
                                 className="object-cover group-hover:scale-110 transition-transform duration-500"
                                 priority
