@@ -96,13 +96,13 @@ export default function BirthdayCakesLanding() {
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.8, delay: 0.2 }}
-                            className="relative h-[350px] md:h-[450px] rounded-3xl overflow-hidden shadow-2xl group cursor-pointer bg-gradient-to-b from-white to-[#F9F5F0]"
+                            className="relative h-[350px] md:h-[450px] rounded-3xl overflow-hidden shadow-2xl group cursor-pointer"
                         >
                             <Image
-                                src="/minnie-mouse-setup.jpg"
-                                alt="Mesa de torta Minnie Mouse"
+                                src="/minnie-mouse-setup-hd.jpg"
+                                alt="Mesa de torta Minnie Mouse HD"
                                 fill
-                                className="object-contain group-hover:scale-105 transition-transform duration-500"
+                                className="object-cover group-hover:scale-110 transition-transform duration-500"
                                 priority
                             />
                         </motion.div>
