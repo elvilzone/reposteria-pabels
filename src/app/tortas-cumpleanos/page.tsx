@@ -14,12 +14,12 @@ export default function BirthdayCakesLanding() {
     const whatsappLink = `https://wa.me/${SITE_CONFIG.whatsappNumber}?text=${whatsappMessage}`;
 
     const galleryImages = [
-        '/minnie-mouse-setup.jpg',
+        '/masha-bear-cake.jpg',
         '/royal-prince-cake.jpg',
         '/lol-surprise-cake.jpg',
-        '/masha-bear-cake.jpg',
+        '/bautizo-setup.jpg',
         '/baby-shower-bear.jpg',
-        '/bautizo-setup.jpg'
+        '/bday-minnie-pink.jpg'
     ];
 
     const testimonials = [
@@ -96,13 +96,13 @@ export default function BirthdayCakesLanding() {
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.8, delay: 0.2 }}
-                            className="relative h-[350px] md:h-[450px] rounded-3xl overflow-hidden shadow-2xl group cursor-pointer"
+                            className="relative h-[350px] md:h-[450px] rounded-3xl overflow-hidden shadow-2xl group cursor-pointer bg-gradient-to-b from-white to-[#F9F5F0]"
                         >
                             <Image
-                                src="/masha-bear-cake.jpg"
-                                alt="Torta Masha y el Oso"
+                                src="/minnie-mouse-setup.jpg"
+                                alt="Mesa de torta Minnie Mouse"
                                 fill
-                                className="object-cover group-hover:scale-110 transition-transform duration-500"
+                                className="object-contain group-hover:scale-105 transition-transform duration-500"
                                 priority
                             />
                         </motion.div>
